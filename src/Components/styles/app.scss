@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// DONT TOUCH
+@mixin flexCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+// DONT TOUCH
+@mixin flexRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+// DONT TOUCH
+@mixin parralax {
+    background-attachment: fixed;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+// DONT TOUCH
+@mixin fullScreener {
+    height: 100vh;
+    width: 100vw;
+}
+// DONT TOUCH
+@mixin animationInfo{
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    
+}
+// DONT TOUCH
+@mixin absCentered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+// adjusting widths to full width
+body{
+    width: 100%;
+}
+// adjusting widths to full width
+#root{
+    width: 100%;
+}
+
+// basic app stylings 
+.App{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100;
+    @include flexCol();
+    justify-content: space-between;
+
+}
