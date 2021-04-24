@@ -13,8 +13,6 @@
 .mainHeader {
   min-height: 10vh;
   width: 100%;
-  background-color: #0d800d;
-  border-bottom: 2px solid #d844d8;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,18 +30,35 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0rem 1rem;
+  padding: 0rem 1vw;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.mainHeader div {
+  font-family: 'Antonio', sans-serif;
+}
+
+.mainHeader div h1 {
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
 }
 
 .mainHeader div i {
-  color: black;
-  font-size: 2vw;
+  color: white;
+  font-size: 3vw;
   cursor: pointer;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
 }
 
 .mainHeader div i:hover {
-  font-size: 2.25vw;
-  color: lime;
+  color: #b384ff;
+}
+
+.mainHeader div .fa-globe {
+  font-size: 10vw;
+  display: none;
 }
 
 .mainHeader div img {
@@ -57,5 +72,9 @@
 .mainHeader div img:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+.mainHeader div:hover h1 {
+  color: #b384ff;
 }
 /*# sourceMappingURL=head.css.map */

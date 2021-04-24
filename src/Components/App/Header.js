@@ -7,12 +7,8 @@ export class Header extends Component {
     render() {
         return (
             <header className='mainHeader'>
-                <div>
-                    <Logo />
-                </div>
-                <div>
-                    <Hamburgermenu />
-                </div>
+                <Logo />
+                <Hamburgermenu />
             </header>
         )
     }
