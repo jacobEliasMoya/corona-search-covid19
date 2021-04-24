@@ -12,8 +12,8 @@ body {
 }
 
 .App {
-  background-color: black;
-  color: lime;
+  background: linear-gradient(45deg, #1b0244, black);
+  color: white;
   height: 100vh;
   width: 100;
   display: -webkit-box;

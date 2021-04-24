@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
-import logo from '../images/germ.png';
 
 // simple image to be outputted with interchangable image src
 export class Logo extends Component {
     render() {
-        return (<img src={logo} />)
+        return (
+            // <i className='fas fa-globe'></i>
+            <div>
+                <h1>JakeRona</h1>
+                <p>Covid Statistics</p>
+            </div>
+        )
     }
 }

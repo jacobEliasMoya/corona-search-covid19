@@ -55,21 +55,29 @@ $pinkcolor :rgb(216, 68, 216);
 .mainHeader{
     min-height: 10vh;
     width: 100%;
-    background-color: rgb(13, 128, 13);
-    border-bottom: 2px solid $pinkcolor;
     color: white;
     @include flexRow();
     justify-content: space-between;
-    padding: 0rem 1rem;
+    padding: 0rem 1vw;
+    transition: all ease .5s;
     div{
+        font-family: 'Antonio', sans-serif;
+
+        h1{
+            transition: all ease .5s;
+        }
         i{
-            color: black;
-            font-size: 2vw;
+            color: white;
+            font-size: 3vw;
             cursor: pointer;
+            transition: all ease .5s;
             &:hover{
-                font-size: 2.25vw;
-                color: lime;
+                color: #b384ff;
             }
+        }
+        .fa-globe{
+            font-size: 10vw;
+            display: none;
         }
         img{
             width: 5%;
@@ -80,5 +88,11 @@ $pinkcolor :rgb(216, 68, 216);
                 transform: rotate(360deg);
             }
         }
+        &:hover{
+            h1{
+                color: #b384ff;
+            }
+        }
     }
+
 }
