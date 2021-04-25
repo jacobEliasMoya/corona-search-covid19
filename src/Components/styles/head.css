@@ -30,9 +30,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0rem 1vw;
+  padding: 1vw;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+  -webkit-box-shadow: 0rem 0rem 1vw rgba(189, 148, 255, 0.103);
+          box-shadow: 0rem 0rem 1vw rgba(189, 148, 255, 0.103);
+  background-color: #250a57;
+  border-bottom: .5rem solid white;
 }
 
 .mainHeader div {
@@ -76,5 +80,9 @@
 
 .mainHeader div:hover h1 {
   color: #b384ff;
+}
+
+.mainHeader:hover {
+  border-bottom: .5rem solid salmon;
 }
 /*# sourceMappingURL=head.css.map */

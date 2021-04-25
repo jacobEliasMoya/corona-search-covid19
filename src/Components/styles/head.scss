@@ -58,8 +58,11 @@ $pinkcolor :rgb(216, 68, 216);
     color: white;
     @include flexRow();
     justify-content: space-between;
-    padding: 0rem 1vw;
+    padding: 1vw;
     transition: all ease .5s;
+    box-shadow: 0rem 0rem 1vw rgba(189, 148, 255, 0.103);
+    background-color: rgb(37, 10, 87);
+    border-bottom: .5rem solid white;
     div{
         font-family: 'Antonio', sans-serif;
 
@@ -93,6 +96,9 @@ $pinkcolor :rgb(216, 68, 216);
                 color: #b384ff;
             }
         }
+    }
+    &:hover{
+        border-bottom: .5rem solid salmon;
     }
 
 }
