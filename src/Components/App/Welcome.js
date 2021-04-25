@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/welcome.css';
 import {Learnmore} from './Learnmore';
+ 
 export class Welcome extends Component {
     render() {
         return (

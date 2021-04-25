@@ -20,7 +20,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 98%;
+  width: 95%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -52,13 +52,10 @@
   width: 50%;
   font-family: Arial, sans-serif;
   color: white;
-  -webkit-box-shadow: .5rem .5rem white;
-          box-shadow: .5rem .5rem white;
   background-color: #250a57;
-  min-height: 20vw;
-  max-height: 20vw;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+  border-radius: .5rem;
 }
 
 .welcome_section div h1 {
@@ -72,8 +69,8 @@
 }
 
 .welcome_section div:hover {
-  -webkit-box-shadow: .5rem .5rem salmon;
-          box-shadow: .5rem .5rem salmon;
+  -webkit-box-shadow: .25rem .25rem salmon;
+          box-shadow: .25rem .25rem salmon;
 }
 
 .welcome_section .learnmore {
@@ -90,13 +87,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   cursor: pointer;
   width: 50%;
-  min-height: 20vw;
-  max-height: 20vw;
   font-family: Arial, sans-serif;
 }
 
@@ -104,33 +102,30 @@
   text-align: center;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+  border-radius: .5rem;
 }
 
 .welcome_section .learnmore *:hover {
-  -webkit-box-shadow: .5rem .5rem salmon;
-          box-shadow: .5rem .5rem salmon;
+  -webkit-box-shadow: -.25rem .25rem salmon;
+          box-shadow: -.25rem .25rem salmon;
 }
 
 .welcome_section .learnmore a {
   color: white;
   text-decoration: none;
-  -webkit-box-shadow: .5rem .5rem white;
-          box-shadow: .5rem .5rem white;
   background-color: #250a57;
   padding: 1vw;
-  min-width: 80%;
-  margin-bottom: 2vw;
+  margin-bottom: 4.5vw;
+  width: 70%;
 }
 
 .welcome_section .learnmore button {
   cursor: pointer;
-  -webkit-box-shadow: .5rem .5rem white;
-          box-shadow: .5rem .5rem white;
   background-color: #250a57;
   padding: 1vw;
   color: white;
   font-size: 1rem;
   border: none;
-  min-width: 80%;
+  width: 70%;
 }
 /*# sourceMappingURL=welcome.css.map */

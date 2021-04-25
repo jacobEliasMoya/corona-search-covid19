@@ -4,7 +4,7 @@ export class Hamburgermenu extends Component {
     render() {
         return (
             <div>
-                <i class="material-icons">menu</i>
+                <i className="material-icons">menu</i>
             </div>
         )
     }

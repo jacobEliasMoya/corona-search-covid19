@@ -53,21 +53,24 @@ $pinkcolor :rgb(216, 68, 216);
 }
 
 .mainHeader{
-    min-height: 10vh;
+    max-height: 8vh;
     width: 100%;
     color: white;
     @include flexRow();
     justify-content: space-between;
-    padding: 1vw;
+    padding: 1vw 3.5vw;
     transition: all ease .5s;
     box-shadow: 0rem 0rem 1vw rgba(189, 148, 255, 0.103);
     background-color: rgb(37, 10, 87);
-    border-bottom: .5rem solid white;
+    margin-bottom: 2vw;
     div{
+        @include flexRow();
+        align-items: flex-end;
         font-family: 'Antonio', sans-serif;
 
         h1{
             transition: all ease .5s;
+            margin-right: 1vw;
         }
         i{
             color: white;
@@ -75,7 +78,7 @@ $pinkcolor :rgb(216, 68, 216);
             cursor: pointer;
             transition: all ease .5s;
             &:hover{
-                color: #b384ff;
+                color: salmon;
             }
         }
         .fa-globe{
@@ -93,12 +96,9 @@ $pinkcolor :rgb(216, 68, 216);
         }
         &:hover{
             h1{
-                color: #b384ff;
+                color: salmon;
             }
         }
-    }
-    &:hover{
-        border-bottom: .5rem solid salmon;
     }
 
 }

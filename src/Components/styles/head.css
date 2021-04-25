@@ -11,7 +11,7 @@
 }
 
 .mainHeader {
-  min-height: 10vh;
+  max-height: 8vh;
   width: 100%;
   color: white;
   display: -webkit-box;
@@ -30,22 +30,39 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1vw;
+  padding: 1vw 3.5vw;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
   -webkit-box-shadow: 0rem 0rem 1vw rgba(189, 148, 255, 0.103);
           box-shadow: 0rem 0rem 1vw rgba(189, 148, 255, 0.103);
   background-color: #250a57;
-  border-bottom: .5rem solid white;
+  margin-bottom: 2vw;
 }
 
 .mainHeader div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-family: 'Antonio', sans-serif;
 }
 
 .mainHeader div h1 {
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+  margin-right: 1vw;
 }
 
 .mainHeader div i {
@@ -57,7 +74,7 @@
 }
 
 .mainHeader div i:hover {
-  color: #b384ff;
+  color: salmon;
 }
 
 .mainHeader div .fa-globe {
@@ -79,10 +96,6 @@
 }
 
 .mainHeader div:hover h1 {
-  color: #b384ff;
-}
-
-.mainHeader:hover {
-  border-bottom: .5rem solid salmon;
+  color: salmon;
 }
 /*# sourceMappingURL=head.css.map */
