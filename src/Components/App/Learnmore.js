@@ -19,6 +19,7 @@ export class Learnmore extends Component {
         this.crosstest = this.crosstest.bind(this);
 
     }
+    // test
 
     crosstest(){
         console.log('working');
