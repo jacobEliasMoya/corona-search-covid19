@@ -17,15 +17,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   width: 95%;
-  padding: 1vw;
-  margin-top: 1vw;
+  margin-bottom: 4vh;
 }
 
 .welcome_section div {
@@ -45,13 +44,18 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 1% 2%;
-  width: 40%;
+  width: 45%;
   font-family: Arial, sans-serif;
   color: white;
+  min-height: 5vw;
   background-color: #223b3d;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  border-bottom: .25vw solid white;
 }
 
 .welcome_section div h1 {
@@ -64,12 +68,29 @@
   line-height: 1.5;
 }
 
-.welcome_section div:hover {
-  -webkit-box-shadow: .25rem .25rem white;
-          box-shadow: .25rem .25rem white;
+.welcome_section .learnmore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  cursor: pointer;
+  width: 50%;
+  font-family: Arial, sans-serif;
 }
 
-.welcome_section .learnmore {
+.welcome_section .learnmore a, .welcome_section .learnmore button:not(.selectbutton), .welcome_section .learnmore div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,46 +104,87 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  cursor: pointer;
+  text-align: left;
+  border-bottom: .25vw solid white;
   width: 50%;
-  font-family: Arial, sans-serif;
+  min-height: 9.59vw;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  padding: .5vw;
+  line-height: 2;
 }
 
-.welcome_section .learnmore a, .welcome_section .learnmore button, .welcome_section .learnmore div {
-  text-align: center;
-}
-
-.welcome_section .learnmore a:hover, .welcome_section .learnmore button:hover, .welcome_section .learnmore div:hover {
-  border-right: .25rem solid white;
+.welcome_section .learnmore a:hover, .welcome_section .learnmore button:not(.selectbutton):hover, .welcome_section .learnmore div:hover {
+  border-bottom: .25vw solid salmon;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: none;
-  transition: none;
+  -webkit-box-shadow: 0 1rem 1rem rgba(255, 192, 203, 0.329);
+          box-shadow: 0 1rem 1rem rgba(255, 192, 203, 0.329);
+  border-radius: 1rem;
+  text-decoration: underline;
+}
+
+.welcome_section .learnmore a:hover select, .welcome_section .learnmore a:hover button, .welcome_section .learnmore button:not(.selectbutton):hover select, .welcome_section .learnmore button:not(.selectbutton):hover button, .welcome_section .learnmore div:hover select, .welcome_section .learnmore div:hover button {
+  border-radius: .5vw;
 }
 
 .welcome_section .learnmore a {
   color: white;
   text-decoration: none;
   background-color: #223b3d;
-  padding: 1vw;
-  width: 70%;
 }
 
 .welcome_section .learnmore button {
   cursor: pointer;
   background-color: #223b3d;
-  padding: 1vw;
   color: white;
   font-size: 1rem;
   border: none;
-  width: 70%;
+  margin: 0vw .5vw;
 }
 
 .welcome_section .learnmore div {
-  padding: 1vw;
-  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: default;
+}
+
+.welcome_section .learnmore div select:hover, .welcome_section .learnmore div button:hover {
+  border: .1vw solid salmon;
+}
+
+.welcome_section .learnmore div select {
+  background: black;
+  color: white;
+  min-height: 2vw;
+  padding: .25vw;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  width: 90%;
+  border: .1vw solid white;
+  margin-right: .5vw;
+}
+
+.welcome_section .learnmore div button {
+  background: black;
+  color: white;
+  border: .1vw solid white;
+  min-height: 2vw;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  padding: 0vw .25vw;
 }
 /*# sourceMappingURL=welcome.css.map */

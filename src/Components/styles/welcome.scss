@@ -47,24 +47,23 @@
 
 .welcome_section{
     @include flexRow();
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
     width: 95%;
-    padding:1vw;
-    margin-top: 1vw;
-
+    margin-bottom: 4vh;
     div{
         @include flexCol();
         justify-content: space-evenly;
+        align-items: flex-start;
         padding:1% 2%;
-        width: 40%;
+        width: 45%;
         font-family: Arial, sans-serif;
         color: white;
+        min-height: 5vw;
         // box-shadow: .5rem .5rem white;
         background-color: rgb(34, 59, 61);
-        transition: all ease .5s;
-
-
+        transition: all ease .25s;
+        border-bottom: .25vw solid white;
 
         h1{
             margin-bottom: 1vw;
@@ -74,25 +73,35 @@
             font-weight: bold;
             line-height: 1.5;
         }
-    
-        &:hover{
-            box-shadow: .25rem .25rem white;
-        }
+
         
 
     }
     .learnmore{
-        @include flexCol();
-        align-items: flex-end;
+        @include flexRow();
+        align-items: flex-start;
         cursor: pointer;
         width: 50%;
         font-family: Arial, sans-serif;
-        a,button,div{
-            text-align: center;
+
+        a,button:not(.selectbutton),div{
+            @include flexCol();
+            text-align:left;
+            border-bottom: .25vw solid white;
+            width: 50%;
+            min-height: 9.59vw;
+            transition: all ease .25s;
+            padding: .5vw;
+            line-height: 2;
             &:hover{
-                border-right: .25rem solid white;
+                border-bottom: .25vw solid salmon;
                 box-shadow: none;
-                transition: none;
+                box-shadow: 0 1rem 1rem rgba(255, 192, 203, 0.329);
+                border-radius: 1rem;
+                text-decoration: underline;
+                select,button{
+                    border-radius: .5vw;
+                }
             }
 
         }
@@ -102,28 +111,47 @@
             text-decoration: none;
             // box-shadow: .5rem .5rem white;
             background-color: rgb(34, 59, 61);
-            padding: 1vw;
-            width: 70%;
         }
     
         button{
             cursor: pointer;
             // box-shadow: .5rem .5rem white;
             background-color: rgb(34, 59, 61);
-            padding: 1vw;
             color: white;
             font-size: 1rem;
             border: none;
-            width: 70%;
-    
+            margin: 0vw .5vw;
         }
+
         div{
-            padding: 1vw;
-            width: 70%;
-            // select{
+            @include flexRow();
+            cursor: default;
+            select,button{
+                &:hover{
+                    border:.1vw solid salmon;
+                }
+            }
+            select{
+                background: black;
+                color: white;
+                min-height: 2vw;
+                padding: .25vw;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all ease .25s;
+                width: 90%;
+                border:.1vw solid white;
+                margin-right: .5vw;
+            }
+            button{
+                background: black;
+                color: white;
+                border:.1vw solid white;
+                min-height: 2vw;
+                transition: all ease .25s;
+                padding: 0vw .25vw;
 
-            // }
-
+            }
         }
     }
 }

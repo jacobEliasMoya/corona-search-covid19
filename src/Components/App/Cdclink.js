@@ -9,7 +9,7 @@ export class Cdclink extends Component {
                 rel={this.props.rel}
 
             >
-                Click here to learn more about COVID-19
+                Click to learn more about COVID
             </a>
         )
     }

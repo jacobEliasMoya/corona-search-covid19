@@ -2,6 +2,7 @@ import React from 'react'
 import { Header} from './Header';
 import { Welcome} from './Welcome';
 import {Datasection} from './Datasection';
+// import {Spacer} from './Spacer';
 
 
 import '../styles/app.css';
@@ -14,7 +15,6 @@ function App() {
       <Header />
 	    <Welcome />
 	    <Datasection />
-
     </div>
   );
 }

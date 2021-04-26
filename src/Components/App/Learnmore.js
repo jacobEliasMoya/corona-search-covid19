@@ -5,9 +5,9 @@ import {Searchlocation} from './Searchlocation.js';
 
 // exporting object so I can use its information in other files
 export const searchObj = {
+    myLocation : undefined,
     searchLocation : undefined,
     allSeachData : undefined
-    
 }
 
 export class Learnmore extends Component {
@@ -16,11 +16,18 @@ export class Learnmore extends Component {
         super(props);
         this.displayLocation = this.displayLocation.bind(this);
         this.getLocationData = this.getLocationData.bind(this);
+        this.crosstest = this.crosstest.bind(this);
+
     }
 
-    // small function that takes an element, and based on a match to another keyvalue exexcute console log
+    crosstest(){
+        console.log('working');
+    }
+
+    // small function that takes an element, saves the value to be used in other areas
     checkforMatch(e){
-        e.country===searchObj.searchLocation ? console.log(e):console.log();
+        e.country===searchObj.searchLocation ? searchObj.myLocation=e:console.log();
+        console.log(searchObj.myLocation)
     }
 
     // method that consumes an api for specific country data in regards to covid19
@@ -88,6 +95,10 @@ export class Learnmore extends Component {
         this.updateLivelog();
     }
 
+    updateMylocInfo(){
+        console.log()
+    }
+
     render() {
         return (
             <section className='learnmore'>
@@ -95,7 +106,6 @@ export class Learnmore extends Component {
                     href='https://www.cdc.gov/coronavirus/2019-ncov/communication/guidance.html'
                     target="_blank"
                     rel="noreferrer"
-
                 />
                 <Clicklocation
                     onClick={this.displayLocation}                    
@@ -103,8 +113,6 @@ export class Learnmore extends Component {
                 <Searchlocation
                     placeholder='hello, this is place holder text tht will change'
                 />
-
-
             </section>
         )
     }

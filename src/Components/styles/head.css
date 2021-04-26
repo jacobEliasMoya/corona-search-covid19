@@ -33,9 +33,10 @@
   padding: 1vw 3.5vw;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
-  background-color: black;
+  background-color: #223b3d;
   margin-bottom: 2vw;
   font-weight: bold;
+  border-bottom: .25vw solid white;
 }
 
 .mainHeader div {

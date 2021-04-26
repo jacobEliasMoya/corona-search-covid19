@@ -1,4 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .datasection {
-  width: 100%;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.datasection table {
+  width: 50%;
+  background: #223b3d;
+  border-bottom: .25vw solid white;
+}
+
+.datasection table tr th, .datasection table tr td {
+  text-align: center;
+}
+
+.datasection table tr th {
+  border-bottom: .1vw solid white;
 }
 /*# sourceMappingURL=datasection.css.map */
