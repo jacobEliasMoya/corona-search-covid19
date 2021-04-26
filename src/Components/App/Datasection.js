@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/datasection.css';
-import {Datatable} from './Datatable';
-import {searchObj} from './Learnmore.js';
+// import {Datatable} from './Datatable';
+// import {searchObj} from './Learnmore.js';
 
 export class Datasection extends Component {
     render() {
@@ -14,4 +14,3 @@ export class Datasection extends Component {
     }
 }
 
-searchObj.searchLocation ? console.log(searchObj.searchLocation) : console.log();

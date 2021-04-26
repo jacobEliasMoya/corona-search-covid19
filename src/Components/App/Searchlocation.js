@@ -29,17 +29,33 @@ export class Searchlocation extends Component {
         }, 10);
     }
 
+    // method to add options dynamically by creating and appending new elements to DOM, will be run with lifecycle method update
+    addOptions(){
+        searchObj.allSeachData.forEach(element => {
+            let newoption = document.createElement("OPTION");
+            newoption.innerHTML=element.country;
+            document.querySelector('.selectaddition').appendChild(newoption)            
+        });
+    }
+
+    // runs loadoptions to set newstate of class
     componentDidMount(){
         this.loadOptions();
+    }
+
+    // adding options in dropdown on load
+    componentDidUpdate(){
+        this.addOptions();
     }
 
     render() {
         return (
             <div>
-                <select >
+                <select className='selectaddition'>
                     <option className='mainselnull'>
                         {this.state.loadingText}
                     </option>
+
                 </select>
             </div>
         )
