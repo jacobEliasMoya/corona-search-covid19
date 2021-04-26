@@ -20,10 +20,10 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 95%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 95%;
   padding: 1vw;
   margin-top: 1vw;
 }
@@ -45,17 +45,13 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   padding: 1% 2%;
-  width: 50%;
+  width: 40%;
   font-family: Arial, sans-serif;
   color: white;
-  background-color: #250a57;
+  background-color: #223b3d;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
-  border-radius: .5rem;
 }
 
 .welcome_section div h1 {
@@ -69,8 +65,8 @@
 }
 
 .welcome_section div:hover {
-  -webkit-box-shadow: .25rem .25rem salmon;
-          box-shadow: .25rem .25rem salmon;
+  -webkit-box-shadow: .25rem .25rem white;
+          box-shadow: .25rem .25rem white;
 }
 
 .welcome_section .learnmore {
@@ -90,42 +86,43 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   cursor: pointer;
   width: 50%;
   font-family: Arial, sans-serif;
 }
 
-.welcome_section .learnmore * {
+.welcome_section .learnmore a, .welcome_section .learnmore button, .welcome_section .learnmore div {
   text-align: center;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
-  border-radius: .5rem;
 }
 
-.welcome_section .learnmore *:hover {
-  -webkit-box-shadow: -.25rem .25rem salmon;
-          box-shadow: -.25rem .25rem salmon;
+.welcome_section .learnmore a:hover, .welcome_section .learnmore button:hover, .welcome_section .learnmore div:hover {
+  border-right: .25rem solid white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .welcome_section .learnmore a {
   color: white;
   text-decoration: none;
-  background-color: #250a57;
+  background-color: #223b3d;
   padding: 1vw;
-  margin-bottom: 4.5vw;
   width: 70%;
 }
 
 .welcome_section .learnmore button {
   cursor: pointer;
-  background-color: #250a57;
+  background-color: #223b3d;
   padding: 1vw;
   color: white;
   font-size: 1rem;
   border: none;
+  width: 70%;
+}
+
+.welcome_section .learnmore div {
+  padding: 1vw;
   width: 70%;
 }
 /*# sourceMappingURL=welcome.css.map */

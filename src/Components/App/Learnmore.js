@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import {Clicklocation } from './Clicklocation';
+import {Cdclink} from './Cdclink';
+import {Searchlocation} from './Searchlocation.js';
 
-let searchObj = {
+// exporting object so I can use its information in other files
+export const searchObj = {
     searchLocation : undefined,
+    allSeachData : undefined
     
 }
 
@@ -74,7 +78,8 @@ export class Learnmore extends Component {
         })
         .then(res => res.json())
         .then(res =>{
-            console.log(res.response);
+            // saving data to be used in later components
+            searchObj.allSeachData=res.response;
         })
     }
 
@@ -86,13 +91,20 @@ export class Learnmore extends Component {
     render() {
         return (
             <section className='learnmore'>
-                <a
+                <Cdclink
                     href='https://www.cdc.gov/coronavirus/2019-ncov/communication/guidance.html'
                     target="_blank"
-                >Click here to learn more about COVID-19</a>
-                < Clicklocation
+                    rel="noreferrer"
+
+                />
+                <Clicklocation
                     onClick={this.displayLocation}                    
                 />
+                <Searchlocation
+                    placeholder='hello, this is place holder text tht will change'
+                />
+
+
             </section>
         )
     }

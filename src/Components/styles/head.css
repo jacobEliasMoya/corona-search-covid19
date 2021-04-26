@@ -33,10 +33,9 @@
   padding: 1vw 3.5vw;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
-  -webkit-box-shadow: 0rem 0rem 1vw rgba(189, 148, 255, 0.103);
-          box-shadow: 0rem 0rem 1vw rgba(189, 148, 255, 0.103);
-  background-color: #250a57;
+  background-color: black;
   margin-bottom: 2vw;
+  font-weight: bold;
 }
 
 .mainHeader div {
@@ -73,10 +72,6 @@
   transition: all ease .5s;
 }
 
-.mainHeader div i:hover {
-  color: salmon;
-}
-
 .mainHeader div .fa-globe {
   font-size: 10vw;
   display: none;
@@ -96,6 +91,6 @@
 }
 
 .mainHeader div:hover h1 {
-  color: salmon;
+  color: #3f0d0d;
 }
 /*# sourceMappingURL=head.css.map */
