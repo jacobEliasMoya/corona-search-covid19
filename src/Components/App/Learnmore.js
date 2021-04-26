@@ -100,6 +100,7 @@ export class Learnmore extends Component {
         console.log()
     }
 
+    // TESTGIT STATUS
     render() {
         return (
             <section className='learnmore'>
