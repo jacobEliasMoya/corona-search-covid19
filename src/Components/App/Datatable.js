@@ -2,14 +2,6 @@ import React, { Component } from 'react';
 import {Datatablerow} from './Datatablerow';
 export class Datatable extends Component {
 
-    constructor(props){
-        super(props);
-    }
-
-    addRowsPerData(){
-        
-    }
-
     render() {
         return (
             <table>

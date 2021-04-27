@@ -17,7 +17,7 @@ export class Searchlocation extends Component {
             isloading : true,
             loadingText : "Loading Country List ...",
             loadingTextButton : "Select",
-            currentLocation : undefined
+            currentLocation : undefined,
 
         }
     }

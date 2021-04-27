@@ -13,8 +13,9 @@ export class Datatablerow extends Component {
         let x = setInterval(() => {
             if(searchObj.myLocation){
                 clearInterval(x);
+                // resetState to update component
                 this.setState({information : searchObj.myLocation})
-                }   
+            }   
         }, 1000);
     }    
 
