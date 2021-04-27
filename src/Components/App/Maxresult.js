@@ -5,10 +5,6 @@ import '../styles/datasection.css';
 
 
 export class Maxresult extends Component {
-    constructor(props){
-        super(props);
-    }
-
     render() {
         return (
             <div class="slidecontainer">
