@@ -87,6 +87,9 @@ export class Learnmore extends Component {
         .then(res =>{
             // saving data to be used in later components
             searchObj.allSeachData=res.response;
+            // empty array to stor data
+            let organizedArr = [];
+
         })
     }
 

@@ -14,6 +14,25 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.datasection div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -24,25 +43,72 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 100%;
 }
 
-.datasection table {
+.datasection div table {
+  overflow: hidden;
   width: 45%;
   background: #223b3d;
   border-bottom: .25vw solid white;
+  margin-bottom: 2vw;
 }
 
-.datasection table tr th, .datasection table tr td {
+.datasection div table span h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.datasection div table tr {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+}
+
+.datasection div table tr th, .datasection div table tr td {
   text-align: center;
   font-size: 1vw;
   padding: .25vw;
 }
 
-.datasection table tr th {
+.datasection div table tr th {
   border-bottom: .1vw solid white;
 }
 
-.datasection .extendRow {
+.datasection div table tr:hover {
+  background: #458085;
+  cursor: pointer;
+}
+
+.datasection div .extendRow {
   width: 50%;
+}
+
+.datasection .slidecontainer {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.datasection .slidecontainer button {
+  background: #223b3d;
+  color: white;
+  font-size: 1vw;
+  border-radius: .5vw;
+  padding: .25vw;
+  cursor: pointer;
 }
 /*# sourceMappingURL=datasection.css.map */
