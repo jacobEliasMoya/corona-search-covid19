@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Learnmore} from './Learnmore';
+// import {Learnmore} from './Learnmore';
 export class Clicklocation extends Component {
     render() {
         return (
