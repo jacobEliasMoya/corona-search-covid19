@@ -28,7 +28,6 @@ export class Learnmore extends Component {
     // small function that takes an element, saves the value to be used in other areas
     checkforMatch(e){
         e.country===searchObj.searchLocation ? searchObj.myLocation=e:console.log();
-        console.log(searchObj.myLocation)
     }
 
     // method that consumes an api for specific country data in regards to covid19

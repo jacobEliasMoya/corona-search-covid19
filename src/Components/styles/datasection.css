@@ -31,6 +31,7 @@
 
 .datasection table tr th, .datasection table tr td {
   text-align: center;
+  font-size: 1vw;
 }
 
 .datasection table tr th {

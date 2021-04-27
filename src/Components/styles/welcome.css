@@ -60,12 +60,14 @@
 
 .welcome_section div h1 {
   margin-bottom: 1vw;
+  font-size: 1.25vw;
 }
 
 .welcome_section div p {
   letter-spacing: 1px;
   font-weight: bold;
   line-height: 1.5;
+  font-size: .85vw;
 }
 
 .welcome_section .learnmore {
@@ -112,14 +114,12 @@
   transition: all ease .25s;
   padding: .5vw;
   line-height: 2;
+  font-size: .8vw;
 }
 
 .welcome_section .learnmore a:hover, .welcome_section .learnmore button:not(.selectbutton):hover, .welcome_section .learnmore div:hover {
-  border-bottom: .25vw solid salmon;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-box-shadow: 0 1rem 1rem rgba(255, 192, 203, 0.329);
-          box-shadow: 0 1rem 1rem rgba(255, 192, 203, 0.329);
   border-radius: 1rem;
   text-decoration: underline;
 }

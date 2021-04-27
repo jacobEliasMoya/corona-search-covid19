@@ -67,11 +67,14 @@
 
         h1{
             margin-bottom: 1vw;
+            font-size: 1.25vw;
+
         }
         p{
             letter-spacing: 1px;
             font-weight: bold;
             line-height: 1.5;
+            font-size: .85vw;
         }
 
         
@@ -93,10 +96,10 @@
             transition: all ease .25s;
             padding: .5vw;
             line-height: 2;
+            font-size: .8vw;
+
             &:hover{
-                border-bottom: .25vw solid salmon;
                 box-shadow: none;
-                box-shadow: 0 1rem 1rem rgba(255, 192, 203, 0.329);
                 border-radius: 1rem;
                 text-decoration: underline;
                 select,button{
@@ -126,10 +129,10 @@
         div{
             @include flexRow();
             cursor: default;
-            select,button{
-                &:hover{
-                    border:.1vw solid salmon;
-                }
+            // select,button{
+            //     &:hover{
+            //         border:.1vw solid salmon;
+            //     }
             }
             select{
                 background: black;
