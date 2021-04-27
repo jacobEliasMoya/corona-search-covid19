@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import {Datatablerow} from './Datatablerow';
-export class Datatable extends Component {
+import React, { Component } from 'react'
+import {Totaldatarow} from './Totaldatarow';
 
+export class TotalDatatable extends Component {
     render() {
         return (
-            <table className='extendRow'>
-                <tbody>
+            <table >
+                <tbody className='alldatatbody'>
                     <tr className='headrow'>
                         <th>Country Name</th>
                         <th>Continent Name</th>
@@ -14,9 +14,9 @@ export class Datatable extends Component {
                         <th>Existing Cases</th>
                         <th>Date</th>
                     </tr>
-                    <Datatablerow/>
+                    <Totaldatarow />
                 </tbody>
-            </table>   
+            </table>          
         )
     }
 }

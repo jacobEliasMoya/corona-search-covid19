@@ -18,13 +18,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .datasection table {
-  width: 50%;
+  width: 45%;
   background: #223b3d;
   border-bottom: .25vw solid white;
 }
@@ -32,9 +35,14 @@
 .datasection table tr th, .datasection table tr td {
   text-align: center;
   font-size: 1vw;
+  padding: .25vw;
 }
 
 .datasection table tr th {
   border-bottom: .1vw solid white;
+}
+
+.datasection .extendRow {
+  width: 50%;
 }
 /*# sourceMappingURL=datasection.css.map */

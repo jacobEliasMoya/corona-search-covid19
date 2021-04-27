@@ -160,10 +160,6 @@
   cursor: default;
 }
 
-.welcome_section .learnmore div select:hover, .welcome_section .learnmore div button:hover {
-  border: .1vw solid salmon;
-}
-
 .welcome_section .learnmore div select {
   background: black;
   color: white;

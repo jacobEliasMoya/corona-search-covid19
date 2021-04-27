@@ -48,20 +48,26 @@
 .datasection{
     width: 95%;
     @include flexRow();
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-start;
     table{
-        width: 50%;
+        width: 45%;
         background: rgb(34, 59, 61);
         border-bottom: .25vw solid white;
         tr{
             th,td{
                 text-align: center;
                 font-size: 1vw;
+                padding: .25vw;
             }
             th{
                 border-bottom: .1vw solid white;
             }
         }
+    }
+
+    .extendRow{
+        width: 50%;
     }
     
 }
