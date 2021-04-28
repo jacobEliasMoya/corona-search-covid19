@@ -3,12 +3,13 @@ import React, { Component } from 'react'
 
 import { Datatable } from './Datatable';
 import { TotalDatatable } from './TotalDatatable';
-import { Maxresult } from './Maxresult';
 import {Logo} from './Logo';
 import {Hamburgermenu} from './Hamburgermenu';
 import {Clicklocation } from './Clicklocation';
 import {Cdclink} from './Cdclink';
 import {Searchlocation} from './Searchlocation.js';
+import { Databutton } from './Databutton';
+
 
 import '../styles/head.css';
 import '../styles/welcome.css';
@@ -137,7 +138,12 @@ export default class App extends Component {
               <TotalDatatable/>
               <Datatable/>
           </div>
-          <Maxresult/>
+          <div className="slidecontainer">
+                <Databutton inner={<i class="fa fa-caret-up"></i>}/>
+                <Databutton />
+                <Databutton />
+                <Databutton inner={<i class="fa fa-caret-down"></i>}/>
+            </div>
         </section>    
       </div>
     );  }
