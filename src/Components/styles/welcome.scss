@@ -48,7 +48,7 @@
 .welcome_section{
     @include flexRow();
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
     width: 95%;
     margin-bottom: 4vh;
     div{
@@ -92,7 +92,7 @@
             text-align:left;
             border-bottom: .25vw solid white;
             width: 50%;
-            min-height: 9.59vw;
+            min-height: 5vw;
             transition: all ease .25s;
             padding: .5vw;
             line-height: 2;

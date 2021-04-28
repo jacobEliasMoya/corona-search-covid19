@@ -54,12 +54,23 @@
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;
+        .doubdatatable{
+            @include flexCol();
+            width: 50%;
+            table{
+                width: 100%;
+            }
+        }
         table{
             overflow: hidden;
             width: 45%;
             background: rgb(34, 59, 61);
             border-bottom: .25vw solid white;
             margin-bottom: 2vw;
+            thead{
+                height: 50px;
+                overflow: hidden;
+            }
             span{
                 h1{
                     width: 100%;
@@ -88,6 +99,10 @@
         }
     }
     
+
+
+
+
     .slidecontainer{
         width: 45%;
         @include flexRow();
@@ -100,10 +115,11 @@
             border-radius: .5vw;
             padding: .1vw;
             cursor: pointer;
-            min-width: 15%;
+            min-width: 25%;
             i{
                 font-size: 1.5vw;
             }
         }
+
     }
 }
