@@ -5,10 +5,7 @@ export class Totaldatarow extends Component {
 
     constructor(props){
         super(props);
-        this.state={
-            information : searchObj.myLocation,
-            maxDisplay : 15
-        }
+        this.state={information : searchObj.myLocation}
     }
 
     displayMydata(){
@@ -24,14 +21,10 @@ export class Totaldatarow extends Component {
     }    
 
     createNewRow(){
-        // way to clear html
         this.state.information.forEach(item=>{
-            //  && document.querySelector('.alldatatbody').childElementCount < this.state.maxDisplay for the if statement when necessary
-            if(item.population && document.querySelector('.alldatatbody').childElementCount < this.state.maxDisplay ){
-                let newrow = document.createElement("tr");
-                this.createDynamicTableData(newrow,item);
-                document.querySelector('.alldatatbody').append(newrow);
-            }
+            let newrow = document.createElement("tr");
+            this.createDynamicTableData(newrow,item);
+            document.querySelector('.alldatatbody').append(newrow);
         })
     }
 
@@ -39,7 +32,6 @@ export class Totaldatarow extends Component {
     createDynamicTableData(row,item){
         // creating all table data to be used
         let country = document.createElement("td");
-        country.classList.add('country');
         let continent = document.createElement("td");
         let population = document.createElement("td");
         let newcases = document.createElement("td");

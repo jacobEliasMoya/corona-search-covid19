@@ -14,25 +14,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.datasection div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -43,37 +24,25 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 100%;
 }
 
-.datasection div table {
-  overflow: hidden;
+.datasection table {
   width: 45%;
   background: #223b3d;
   border-bottom: .25vw solid white;
-  margin-bottom: 2vw;
 }
 
-.datasection div table span h1 {
-  width: 100%;
-  text-align: center;
-}
-
-.datasection div table tr {
-  -webkit-transition: all ease .25s;
-  transition: all ease .25s;
-}
-
-.datasection div table tr th, .datasection div table tr td {
+.datasection table tr th, .datasection table tr td {
   text-align: center;
   font-size: 1vw;
   padding: .25vw;
 }
 
-.datasection div table tr th {
+.datasection table tr th {
   border-bottom: .1vw solid white;
 }
 
+<<<<<<< HEAD
 .datasection div table tr:hover {
   background: #458085;
   cursor: pointer;
@@ -130,4 +99,9 @@
   background: #458085;
   border-radius: .5vw;
 }
+=======
+.datasection .extendRow {
+  width: 50%;
+}
+>>>>>>> parent of cdeb88f (slight changes, added buttons, like that flow)
 /*# sourceMappingURL=datasection.css.map */
