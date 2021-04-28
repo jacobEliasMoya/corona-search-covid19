@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {searchObj} from './Learnmore';
+import {searchObj} from './App';
 
 export class Totaldatarow extends Component {
 
