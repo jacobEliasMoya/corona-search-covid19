@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
-
 // DONT TOUCH
 @mixin flexCol {
     display: flex;
@@ -81,6 +79,10 @@
                     cursor: pointer;
                 }
             }
+            .headrow{
+                background: rgb(34, 59, 61) !important;
+                cursor: default !important;
+            }
         }
     
         .extendRow{
@@ -93,13 +95,23 @@
         @include flexRow();
         justify-content: space-between;
 
+        div{
+            justify-content: space-between;
+        }
+
         button{
             background: rgb(34, 59, 61);
             color: white;
             font-size: 1vw;
-            border-radius: .5vw;
             padding: .25vw;
             cursor: pointer;
+            width: 20%;
+            border-bottom: .25vw solid white;
+            transition: all ease .25s;
+            &:hover{
+                background: rgb(69, 128, 133);
+                border-radius: .5vw;
+            }
         }
     }
 }

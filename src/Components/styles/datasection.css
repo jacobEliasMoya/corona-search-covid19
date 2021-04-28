@@ -79,6 +79,11 @@
   cursor: pointer;
 }
 
+.datasection div table .headrow {
+  background: #223b3d !important;
+  cursor: default !important;
+}
+
 .datasection div .extendRow {
   width: 50%;
 }
@@ -103,12 +108,26 @@
           justify-content: space-between;
 }
 
+.datasection .slidecontainer div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .datasection .slidecontainer button {
   background: #223b3d;
   color: white;
   font-size: 1vw;
-  border-radius: .5vw;
   padding: .25vw;
   cursor: pointer;
+  width: 20%;
+  border-bottom: .25vw solid white;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+}
+
+.datasection .slidecontainer button:hover {
+  background: #458085;
+  border-radius: .5vw;
 }
 /*# sourceMappingURL=datasection.css.map */

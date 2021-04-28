@@ -55,7 +55,6 @@ export class Totaldatarow extends Component {
         // appending all created elements
         row.append(country,continent,population,newcases,existingcases,date)
     }
-    
 
     componentDidMount(){
         this.displayMydata();
