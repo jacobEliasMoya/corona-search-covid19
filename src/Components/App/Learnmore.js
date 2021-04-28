@@ -88,8 +88,11 @@ export class Learnmore extends Component {
             // saving data to be used in later components
             searchObj.allSeachData=res.response;
 <<<<<<< HEAD
+<<<<<<< HEAD
             // empty array to stor data
 
+=======
+>>>>>>> parent of cdeb88f (slight changes, added buttons, like that flow)
 =======
 >>>>>>> parent of cdeb88f (slight changes, added buttons, like that flow)
         })

@@ -43,6 +43,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .datasection div table tr:hover {
   background: #458085;
   cursor: pointer;
@@ -99,6 +100,11 @@
   background: #458085;
   border-radius: .5vw;
 }
+=======
+.datasection .extendRow {
+  width: 50%;
+}
+>>>>>>> parent of cdeb88f (slight changes, added buttons, like that flow)
 =======
 .datasection .extendRow {
   width: 50%;
