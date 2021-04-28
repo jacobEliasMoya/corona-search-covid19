@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+
 // DONT TOUCH
 @mixin flexCol {
     display: flex;
@@ -45,61 +47,59 @@
 
 .datasection{
     width: 95%;
-    @include flexRow();
-    justify-content: space-between;
+    @include flexCol();
     align-items: flex-start;
-    table{
-        width: 45%;
-        background: rgb(34, 59, 61);
-        border-bottom: .25vw solid white;
-        tr{
-            th,td{
-                text-align: center;
-                font-size: 1vw;
-                padding: .25vw;
+    div{
+        @include flexRow();
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        table{
+            overflow: hidden;
+            width: 45%;
+            background: rgb(34, 59, 61);
+            border-bottom: .25vw solid white;
+            margin-bottom: 2vw;
+            span{
+                h1{
+                    width: 100%;
+                    text-align: center;
+                }
             }
-            th{
-                border-bottom: .1vw solid white;
-<<<<<<< HEAD
+            tr{
+                th,td{
+                    text-align: center;
+                    font-size: 1vw;
+                    padding: .25vw;
+                }
+                th{
+                    border-bottom: .1vw solid white;
+                }
+                transition: all ease .25s;
+                &:hover{
+                    background: rgb(69, 128, 133);
+                    cursor: pointer;
+                }
             }
-            .headrow{
-                background: rgb(34, 59, 61) !important;
-                cursor: default !important;
-=======
->>>>>>> parent of cdeb88f (slight changes, added buttons, like that flow)
-            }
+        }
+    
+        .extendRow{
+            width: 50%;
         }
     }
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-        div{
-            justify-content: space-between;
-        }
+    
+    .slidecontainer{
+        width: 45%;
+        @include flexRow();
+        justify-content: space-between;
 
         button{
             background: rgb(34, 59, 61);
             color: white;
             font-size: 1vw;
+            border-radius: .5vw;
             padding: .25vw;
             cursor: pointer;
-            width: 20%;
-            border-bottom: .25vw solid white;
-            transition: all ease .25s;
-            &:hover{
-                background: rgb(69, 128, 133);
-                border-radius: .5vw;
-            }
         }
-=======
-    .extendRow{
-        width: 50%;
->>>>>>> parent of cdeb88f (slight changes, added buttons, like that flow)
-=======
-
-    .extendRow{
-        width: 50%;
->>>>>>> parent of cdeb88f (slight changes, added buttons, like that flow)
     }
-    
 }

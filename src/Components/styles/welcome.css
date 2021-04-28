@@ -122,7 +122,6 @@
           box-shadow: none;
   border-radius: 1rem;
   text-decoration: underline;
-  background: #458085;
 }
 
 .welcome_section .learnmore a:hover select, .welcome_section .learnmore a:hover button, .welcome_section .learnmore button:not(.selectbutton):hover select, .welcome_section .learnmore button:not(.selectbutton):hover button, .welcome_section .learnmore div:hover select, .welcome_section .learnmore div:hover button {
