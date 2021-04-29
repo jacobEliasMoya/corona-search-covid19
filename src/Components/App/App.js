@@ -96,7 +96,11 @@ export default class App extends Component {
     }
 
     hightlightrow(e){
-        console.log(e.target.innerHTML);
+        e.target.children[0].classList.contains("fa-caret-up") ? console.log('up') : console.log('down');
+        
+        // .classList.contains("fa-caret-down") ? console.log('yes') : console.log('no');
+
+        
     }
 
     // lifecyclemethod to update live log on render
@@ -140,9 +144,9 @@ export default class App extends Component {
               </div>
           </div>
           <div className="slidecontainer">
-                <Databutton onClick={this.hightlightrow} inner={<i className="fa fa-caret-up"></i>}/>
+                <Databutton className="upbutton" onClick={this.hightlightrow} inner={<i className="fa fa-caret-up"></i>}/>
                 <Databutton inner='midbutton' className="middlebutton"/>
-                <Databutton onClick={this.hightlightrow} inner={<i className="fa fa-caret-down"></i>}/>
+                <Databutton className="downbutton" onClick={this.hightlightrow} inner={<i className="fa fa-caret-down"></i>}/>
             </div>
         </section>    
       </div>

@@ -5,7 +5,7 @@ export class Databutton extends Component {
 
     render() {
         return (
-            <button>
+            <button onClick={this.props.onClick}>
                 {this.props.inner}
             </button>
         )

@@ -17,7 +17,6 @@ export class Totaldatarow extends Component {
                 clearInterval(x);
                 // resetState to update component
                 this.setState({information : searchObj.allSeachData})
-                console.log(this.state.information)
                 this.createNewRow();
             }   
         }, 1000);
